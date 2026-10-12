@@ -1,0 +1,35 @@
+# Maven
+target/
+
+# Logs
+*.log
+
+# Reports
+karate-reports/
+surefire-reports/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.factorypath
+.apt_generated/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

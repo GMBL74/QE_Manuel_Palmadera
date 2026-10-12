@@ -1,0 +1,322 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "carrito-de-compras;agregar-producto-al-carrito",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Agregar producto al carrito",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1195217200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el usuario ingresa como \"standard_user\"",
+            "match": {
+              "location": "src\\step-definitions\\login.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1166545000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "agrega un producto al carrito",
+            "match": {
+              "location": "src\\step-definitions\\cart.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147209999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "el carrito muestra el producto agregado",
+            "match": {
+              "location": "src\\step-definitions\\cart.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14889199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401033399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "carrito-de-compras",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Carrito de compras",
+    "tags": [],
+    "uri": "src\\features\\cart.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout;compra-completa-exitosa",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Compra completa exitosa",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 910411599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el usuario ingresa como \"standard_user\"",
+            "match": {
+              "location": "src\\step-definitions\\login.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 702221200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "agrega un producto al carrito",
+            "match": {
+              "location": "src\\step-definitions\\cart.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 150292900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "el usuario va al carrito y da click en checkout",
+            "match": {
+              "location": "src\\step-definitions\\checkout.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191866500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "ingresa sus datos personales",
+            "match": {
+              "location": "src\\step-definitions\\checkout.steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 151516599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "finaliza la compra",
+            "match": {
+              "location": "src\\step-definitions\\checkout.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80532000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "visualiza mensaje de compra exitosa",
+            "match": {
+              "location": "src\\step-definitions\\checkout.steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22684200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 453728999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Checkout",
+    "tags": [],
+    "uri": "src\\features\\checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-en-sauce-demo;login-exitoso-con-usuario-válido",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Login exitoso con usuario válido",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 927392799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "el usuario ingresa como \"standard_user\"",
+            "match": {
+              "location": "src\\step-definitions\\login.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 860773699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "visualiza la página de productos",
+            "match": {
+              "location": "src\\step-definitions\\login.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136223300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1068728000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login1",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-en-sauce-demo;login-fallido-con-usuario-bloqueado",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Login fallido con usuario bloqueado",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1090916799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "el usuario ingresa como \"locked_out_user\"",
+            "match": {
+              "location": "src\\step-definitions\\login.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 886080699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "se muestra un mensaje de error",
+            "match": {
+              "location": "src\\step-definitions\\login.steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21398300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 511506200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login2",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-en-sauce-demo",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login en Sauce Demo",
+    "tags": [],
+    "uri": "src\\features\\login.feature"
+  }
+]
